@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOODHUB</title>
+    <script
+      src="https://kit.fontawesome.com/a449182568.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container">
+        <div class="navbar-logo animate-navbar-logo">
+          <a href="#" class="logo"> <i class="fas fa-utensils"> </i>foodhub.</a>
+          <!-- <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a> -->
+        </div>
+        <ul class="navbar__links animate-navbar-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#dishes">Dishes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#review">Review</a></li>
+          <li><a href="#order">Order</a></li>
+        </ul>
+        <div class="navbar__icons animate-navbar-icons">
+          <span class="menu_icon"><i class="fa fa-bars"></i></span>
+          <span><i class="fas fa-search"></i></span>
+          <span><i class="fas fa-heart"></i></span>
+          <span><i class="fas fa-shopping-cart"></i></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile__menu">
+      <nav class="mobile__nav container">
+        <span>
+          <a class="active-menu" href="#">Home</a>
+        </span>
+        <span>
+          <a href="#">dishes</a>
+        </span>
+        <span>
+          <a href="#">about</a>
+        </span>
+        <span>
+          <a href="#">menu</a>
+        </span>
+        <span>
+          <a href="#">review</a>
+        </span>
+        <span>
+          <a href="#">order</a>
+        </span>
+      </nav>
+    </div>
+
+    <!-- header section ends here. -->
+    <!-- home setion starts here. -->
+
+    <section class="home" id="home">
+      <swiper-container
+        class="home__Swiper container"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="false"
+        space-between="30"
+        centered-slides="true"
+        autoplay-delay="2500"
+        autoplay-disable-on-interaction="false"
+      >
+        <swiper-slide class="home__wrapper">
+          <div class="content">
+            <span class="sub-heading">our special dish</span>
+            <h3 class="heading home_title">Spicy Noodles</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur elit. Molestiae, nisi!
+              Molestiae.
+            </p>
+            <button class="btn">order now</button>
+          </div>
+          <div class="image">
+            <img src="home-img-1.png" alt="Noodles" />
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="home__wrapper">
+          <div class="content">
+            <span class="sub-heading">our special dish</span>
+            <h3 class="heading">fried chicken</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur elit. Molestiae, nisi!
+              Molestiae.
+            </p>
+            <button class="btn">order now</button>
+          </div>
+          <div class="image">
+            <img src="home-img-2.png" alt="Noodles" />
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="home__wrapper">
+          <div class="content">
+            <span class="sub-heading">our special dish</span>
+            <h3 class="heading">Hot Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur elit. Molestiae, nisi!
+              Molestiae.
+            </p>
+            <button class="btn">order now</button>
+          </div>
+          <div class="image">
+            <img src="home-img-3.png" alt="Noodles" />
+          </div>
+        </swiper-slide>
+      </swiper-container>
+    </section>
+    <!-- home setion ends here. -->
+
+    <!-- dishes section starts here. -->
+
+    <section class="dishes" id="dishes">
+      <div class="popular__dishes">
+        <div class="title__content">
+          <h3 class="subtitle">our dishes</h3>
+          <h1 class="title">popular dishes</h1>
+        </div>
+
+        <div class="popular__dishes__cardwrapper container">
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-1.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>burger</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-2.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>hash brown</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-3.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>turkey chicken</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-4.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>Pizza</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-5.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>chocolate cookies</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card popular__dishes__card">
+            <div class="card__content">
+              <div class="popular__dishes__card__icon">
+                <span class="left">
+                  <i class="fas fa-heart"></i>
+                </span>
+                <span class="right">
+                  <i class="fas fa-eye"></i>
+                </span>
+              </div>
+              <div class="popular__dishes__details">
+                <div class="popular__dishes__imgwrapper">
+                  <img
+                    src="dish-6.png"
+                    alt="burger"
+                    class="popular__dishes__img"
+                  />
+                </div>
+                <div class="popular__dishes__text">
+                  <h3>fried chicken</h3>
+                </div>
+
+                <div class="star__icon">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-o"></i>
+                </div>
+
+                <div class="price__wrapper">
+                  <span class="price"> $15.99 </span>
+                  <button class="btn card__button">add to cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- dishes section ends here. -->
+
+    <!-- about us section starts here. -->
+    <section class="about" id="about">
+      <div class="about__us container">
+        <div class="title__content">
+          <h3 class="subtitle">about us</h3>
+          <h1 class="title">why choose us</h1>
+        </div>
+        <div class="about__us__content">
+          <div class="about__us__imgwrapper">
+            <img src="about-img.png" alt="sphaghetti" />
+          </div>
+          <div class="about__us__info">
+            <h1 class="title">best food in the country</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              eligendi pariatur, odit odio voluptates at? Minus laboriosam est
+              quod cumque deleniti, sunt optio exercitationem sapiente .
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              eligendi pariatur, odit odio voluptates at? Minus laboriosam est
+              quod cumque deleniti,
+            </p>
+            <div class="about__us__service">
+              <div class="icon__top">
+                <div class="top">
+                  <div class="service__icon">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>free delivery</span>
+                  </div>
+                  <div class="service__icon">
+                    <i class="fas fa-headset"></i>
+                    <span>24/7 service</span>
+                  </div>
+                </div>
+                
+                <div class="bottom">
+                  <div class="service__icon">
+                    <i class="fas fa-dollar-sign"></i>
+                    <span>easy payment</span>
+                  </div>
+                  <button class="service__btn">learn more</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- about section ends here. -->
+
+    <!-- menu section starts here. -->
+    <section class="menu" id="menu">
+      <div class="menu__wrapper">
+        <div class="title__content">
+          <h3 class="subtitle">our menu</h3>
+          <h1 class="title">today's specialty</h1>
+        </div>
+        <div class="menu__card__wrapper container">
+          <div class="card menu__card">
+            <img src="menu-1.jpg" alt="pizza" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-2.jpg" alt="burger" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-3.jpg" alt="pancake" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-4.jpg" alt="fries" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-5.jpg" alt="sphaghetti" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-6.jpg" alt="soup" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-7.jpg" alt="donut" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-8.jpg" alt="veges" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+          <div class="card menu__card">
+            <img src="menu-9.jpg" alt="chicken" />
+            <div class="img__wrapper"></div>
+
+            <span class="heart__icon">
+              <i class="fas fa-heart"></i>
+            </span>
+
+            <div class="star__icon">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+            <div class="menu__text">
+              <h3>delicious food</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
+                nihil quidem vel ullam tempora, debitis pariatur. Deserunt
+                inventore optio nisi.
+              </p>
+            </div>
+            <div class="price__wrapper">
+              <button class="btn card__button">add to cart</button>
+              <span class="price"> $12.99 </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- menu section ends here. -->
+
+    <!-- review section starts here -->
+    <section class="review" id="review">
+      <div class="review__content">
+        <h3 class="subtitle">customer's review</h3>
+        <h1 class="title">what they say</h1>
+      </div>
+
+      <div class="review__container">
+        <swiper-container
+          pagination="true"
+          pagination-clickable="true"
+          navigation="false"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+          slides-per-view="3"
+          class="review__cardwrapper"
+        >
+          <swiper-slide class="card review__card">
+            <div class="card__head">
+              <div class="head__left">
+                <div class="left__img">
+                  <img src="pic-2.jpg" alt="picture" />
+                </div>
+                <div class="left__name_icon">
+                  <h6 class="name">williams bond</h6>
+                  <div class="icon">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="head__right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem maxime illum dolor odit aut deleniti inventore
+                nihil perspiciatis, cum at.aut deleniti inventore nihil
+                perspiciatis.
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="card review__card">
+            <div class="card__head">
+              <div class="head__left">
+                <div class="left__img">
+                  <img src="pic-1.jpg" alt="picture" />
+                </div>
+                <div class="left__name_icon">
+                  <h6 class="name">emily jane</h6>
+                  <div class="icon">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="head__right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem maxime illum dolor odit aut deleniti inventore
+                nihil perspiciatis, cum at.aut deleniti inventore nihil
+                perspiciatis.
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="card review__card">
+            <div class="card__head">
+              <div class="head__left">
+                <div class="left__img">
+                  <img src="pic-4.jpg" alt="picture" />
+                </div>
+                <div class="left__name_icon">
+                  <h6 class="name">shanice kate</h6>
+                  <div class="icon">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="head__right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem maxime illum dolor odit aut deleniti inventore
+                nihil perspiciatis, cum at.aut deleniti inventore nihil
+                perspiciatis.
+              </p>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="card review__card">
+            <div class="card__head">
+              <div class="head__left">
+                <div class="left__img">
+                  <img src="pic-1.jpg" alt="picture" />
+                </div>
+                <div class="left__name_icon">
+                  <h6 class="name">john doe</h6>
+                  <div class="icon">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="head__right">
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+            </div>
+            <div class="card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem maxime illum dolor odit aut deleniti inventore
+                nihil perspiciatis, cum at.aut deleniti inventore nihil
+                perspiciatis.
+              </p>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+      </div>
+    </section>
+    <!-- review section ends here. -->
+
+    <!-- order section starts here. -->
+    <section class="order" id="order">
+      <div class="order__container container">
+        <div class="order__title">
+          <h3 class="subtitle">your order</h3>
+          <h1 class="title">free and fast delivery</h1>
+        </div>
+        <form class="order__content">
+          <div class="order__form">
+            <div class="form__left">
+              <div class="form__input_field">
+                <label for="your name">your name</label>
+                <input type="text" placeholder="enter your name" />
+              </div>
+              <div class="form__input_field">
+                <label for="your name">your order</label>
+                <input type="text" placeholder="enter food name" />
+              </div>
+              <div class="form__input_field">
+                <label for="your name">how much</label>
+                <input type="text" placeholder="how many order" />
+              </div>
+
+              <div class="form__input_field">
+                <label for="your name">your message</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="enter your message"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form__right">
+              <div class="form__input_field">
+                <label for="your name">your number</label>
+                <input type="text" placeholder="enter your number" />
+              </div>
+              <div class="form__input_field">
+                <label for="your name">additional food</label>
+                <input type="text" placeholder="extra with food " />
+              </div>
+              <div class="form__input_field">
+                <label for="your name">date and time</label>
+                <input type="text" placeholder="how many order" />
+              </div>
+
+              <div class="form__input_field">
+                <label for="your name">your message</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="enter your message"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <button class="btn form_btn">order now</button>
+        </form>
+      </div>
+    </section>
+    <!-- order section ends here. -->
+
+    <!-- footer section starts here. -->
+    <section class="footer">
+      <footer class="footer__container container">
+        <div class="info">
+          <h3>location</h3>
+          <a href="#">india</a>
+          <a href="#">japan</a>
+          <a href="#">russia</a>
+          <a href="#">USA</a>
+          <a href="#">france</a>
+        </div>
+        <div class="info">
+          <h3>quick links</h3>
+          <a href="#">home</a>
+          <a href="#">dishes</a>
+          <a href="#">about</a>
+          <a href="#">menu</a>
+          <a href="#">review</a>
+          <a href="#">order</a>
+        </div>
+        <div class="info">
+          <h3>contact info</h3>
+          <a href="#">+123-456-7890</a>
+          <a href="#">+111-222-3333</a>
+          <a href="#">Ordernow@gmail.com</a>
+          <a href="#">bestfood@gmail.com</a>
+          <a href="#">Mumbai, india 4xxxxx</a>
+        </div>
+        <div class="info">
+          <h3>location</h3>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+        </div>
+      </footer>
+      <div class="copy container">
+        copyright @ 2023 <span>Veerandra gumate</span>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+      let menuIcon = document.querySelector(".menu_icon");
+      let mobileMenu = document.querySelector(".mobile__menu");
+
+      menuIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("show__menu");
+        console.log("hi");
+      });
+    </script>
+  </body>
+</html>
